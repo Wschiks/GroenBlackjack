@@ -1,0 +1,27 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1024" d:DesignHeight="600"
+        Width="1024" Height="600"
+        x:Class="avaloniaAppGroen.MainWindow"
+        Title="avaloniaAppGroen">
+
+
+    <Grid Background="{DynamicResource MainBackGround}" ColumnDefinitions="256, 256, 256, 256">
+        <!-- De 4 borders zoals je die had -->
+        <Border Grid.Column="0" Padding="10" Background="Gainsboro"></Border>
+        <Border Grid.Column="1" Padding="10" Background="DarkGray"></Border>
+        <Border Grid.Column="2" Padding="10" Background="Gainsboro"></Border>
+        <Border Grid.Column="3" Padding="10" Background="DarkGray"></Border>
+
+        <!-- De balk aan de onderkant, met de Button erin -->
+        <Border VerticalAlignment="Bottom" Grid.ColumnSpan="4" Height="200" Background="Green">
+            <Border Padding="10" VerticalAlignment="Bottom" Height="40" Background="DarkSlateGray">
+                <Button Content="Card" HorizontalAlignment="Left" />
+            </Border>
+        </Border>
+    </Grid>
+
+
+</Window>
