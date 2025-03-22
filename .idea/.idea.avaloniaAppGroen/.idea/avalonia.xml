@@ -5,6 +5,7 @@
       <map>
         <entry key="App.axaml" value="avaloniaAppGroen.csproj" />
         <entry key="MainWindow.axaml" value="avaloniaAppGroen.csproj" />
+        <entry key="StartWindow.axaml" value="avaloniaAppGroen.csproj" />
         <entry key="styles/AppDefaultStyle.axaml" value="avaloniaAppGroen.csproj" />
       </map>
     </option>

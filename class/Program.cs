@@ -9,11 +9,7 @@ class Program
     [STAThread]
     public static void Main(string[] args)
     {
-
         Pak pak = new Pak();
-        
-        pak.RandKaart();
-
         
         BuildAvaloniaApp().StartWithClassicDesktopLifetime(args);
     }

@@ -27,5 +27,8 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [/Users/wschiks/RiderProjects/avaloniaAppGroen/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[/Users/wschiks/RiderProjects/avaloniaAppGroen/StartWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [/Users/wschiks/RiderProjects/avaloniaAppGroen/styles/AppDefaultStyle.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

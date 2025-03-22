@@ -1,14 +1,16 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Microsoft.VisualBasic.FileIO;
 
 public class Pak
 {
-    Random random = new Random();
+    Random _random = new Random();
 
+    
 
-    List<string> pak = new List<string>
+    List<string> _pak = new List<string>
     {
         "harten 2", "harten 3", "harten 4", "harten 5", "harten 6", "harten 7", "harten 8", "harten 9", "harten 10",
         "harten Boer", "harten Vrouw", "harten Koning", "harten As",
@@ -20,14 +22,35 @@ public class Pak
         "ruiten Boer", "ruiten Vrouw", "ruiten Koning", "ruiten As"
     };
 
-
-    public void RandKaart()
+    private List<string> _schuddenPak = new List<string>();
+    public void SchudPak()
     {
-        int kaart = random.Next(pak.Count);
+        _schuddenPak = new List<string>(_pak);
+        _schuddenPak = _schuddenPak.OrderBy(x => _random.Next()).ToList(); 
+    }
 
-        pak.Remove(pak[kaart]);
-
-      
+    public void PrintPak()
+    {
+        for (int i = 0; i < _pak.Count; i++)
+        {
+            Console.WriteLine(_pak[i]);
+        }
+    }
+    
+    public void PrintSchuddenPak()
+    {
+        for (int i = 0; i < _schuddenPak.Count; i++)
+        {
+            Console.WriteLine(_schuddenPak[i]);
+        }
+    }
+    
+    public void PickKaart()
+    {
+        Console.WriteLine("Rand kaart: " + _schuddenPak[0]);
         
+        _schuddenPak.Remove(_schuddenPak[0]);
     }
 }
+
+   
