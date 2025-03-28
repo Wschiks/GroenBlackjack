@@ -17,13 +17,18 @@ namespace avaloniaAppGroen
         Pak _pak = new Pak();
         private bool Is_Pak_Geschud = false;
 
-    
+        Player _player = new Player();
+        
+     
+  
         
 
         // Originele pak printen
         private void Show_Pak(object? sender, RoutedEventArgs e)
         {
             _pak.PrintPak();
+            
+            
         }
 
         // Geschud pak printen

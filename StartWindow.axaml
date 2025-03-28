@@ -3,9 +3,17 @@
         Title="Start Game"
         Width="1512"
         Height="982"
+        Background="#44673E"
         x:Class="avaloniaAppGroen.StartWindow">
+ 
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="1512" Height="982">
+            <Image Margin="20" Height="400" Width="400" 
+                   Source="avares://avaloniaAppGroen/img/ggy83c1672816896.png"/>
 
-    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        
+        
         <TextBlock Text="Select number of players:" Margin="0,0,0,10" />
         
         
@@ -17,4 +25,5 @@
         
         <Button Content="Start Game" Click="StartGame_Click" />
     </StackPanel>
+</StackPanel>
 </Window>

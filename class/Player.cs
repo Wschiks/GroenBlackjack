@@ -43,6 +43,16 @@ public class Player
                 spelers[i] = new Speler(naam[i],1); 
             }
         }
+
+        public void printplayers()
+        {
+            for (int i = 0; i < NumberOfPlayers; i++)
+            {
+                Console.WriteLine(spelers[i]);
+            }
+           
+        }
+        
     }
 
     

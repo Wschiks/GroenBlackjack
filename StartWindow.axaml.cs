@@ -6,7 +6,7 @@ namespace avaloniaAppGroen
 {
     public partial class StartWindow : Window
     {
-        public int PlayersCount { get; set; } = 1;
+        public int PlayersCount = 1;
 
         public StartWindow()
         {
@@ -24,14 +24,9 @@ namespace avaloniaAppGroen
         
         private void StartGame_Click(object? sender, RoutedEventArgs e)
         {
-            
             Console.WriteLine($"Aantal spelers: {PlayersCount}");
-
-            var mainWindow = new MainWindow();
-            mainWindow.PlayersCount = PlayersCount; 
-
-            mainWindow.Show();
-
+            var window = new MainWindow();
+            window.Show();
             
             this.Close();
         }
