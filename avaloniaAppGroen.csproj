@@ -22,7 +22,10 @@
 
     <ItemGroup>
         <AvaloniaResource Include="img\ggy83c1672816896.png" />
+        <AvaloniaResource Include="img/player-icon.png"/>
     </ItemGroup>
+    
+    
 
 
     <ItemGroup>

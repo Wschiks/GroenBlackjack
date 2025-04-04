@@ -9,11 +9,35 @@
 
 
     <Grid Background="{DynamicResource MainBackGround}" ColumnDefinitions="1*, 1*, 1*, 1*">
-        <!-- De 4 borders zoals je die had -->
-        <Border Grid.Column="0" Padding="10" Background="Gainsboro"></Border>
-        <Border Grid.Column="1" Padding="10" Background="DarkGray"></Border>
-        <Border Grid.Column="2" Padding="10" Background="Gainsboro"></Border>
-        <Border Grid.Column="3" Padding="10" Background="DarkGray"></Border>
+
+        <Border Grid.Column="0" Padding="10" Background="Gainsboro">
+            <StackPanel x:Name="Image10" IsVisible="False">
+                <TextBlock HorizontalAlignment="Center" >Emma</TextBlock>
+                <Image x:Name="Image11" Margin="20" Height="100" VerticalAlignment="Top" IsVisible="False"
+                       Source="avares://avaloniaAppGroen/img/player-icon.png" />
+            </StackPanel>
+        </Border>
+        <Border Grid.Column="1" Padding="10" Background="DarkGray">
+            <StackPanel x:Name="Image20" IsVisible="False">
+                <TextBlock HorizontalAlignment="Center">Daan</TextBlock>
+                <Image x:Name="Image21" Margin="20" Height="100" VerticalAlignment="Top" IsVisible="False"
+                       Source="avares://avaloniaAppGroen/img/player-icon.png" />
+            </StackPanel>
+        </Border>
+        <Border Grid.Column="2" Padding="10" Background="Gainsboro">
+            <StackPanel x:Name="Image30" IsVisible="False">
+                <TextBlock HorizontalAlignment="Center">Sophia</TextBlock>
+                <Image x:Name="Image31" Margin="20" Height="100" VerticalAlignment="Top" IsVisible="False"
+                       Source="avares://avaloniaAppGroen/img/player-icon.png" />
+            </StackPanel>
+        </Border>
+        <Border Grid.Column="3" Padding="10" Background="DarkGray">
+            <StackPanel>
+                <TextBlock HorizontalAlignment="Center" x:Name="Image40" IsVisible="False">Peter</TextBlock>
+                <Image x:Name="Image41" Margin="20" Height="100" VerticalAlignment="Top" IsVisible="False"
+                       Source="avares://avaloniaAppGroen/img/player-icon.png" />
+            </StackPanel>
+        </Border>
 
 
         <Border VerticalAlignment="Bottom" Grid.ColumnSpan="4" Height="270" Background="Green">

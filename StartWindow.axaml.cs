@@ -25,10 +25,13 @@ namespace avaloniaAppGroen
         private void StartGame_Click(object? sender, RoutedEventArgs e)
         {
             Console.WriteLine($"Aantal spelers: {PlayersCount}");
-            var window = new MainWindow();
+    
+            // Create a new instance of MainWindow and pass PlayersCount
+            var window = new MainWindow(PlayersCount);
             window.Show();
-            
+
             this.Close();
         }
+
     }
 }
