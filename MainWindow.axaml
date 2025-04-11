@@ -19,7 +19,7 @@
                         HorizontalAlignment="Center" />
                 <StackPanel HorizontalAlignment="Center" x:Name="Toonkartenspeler1">
                 </StackPanel>
-            </StackPanel>
+            </StackPanel> 
         </Border>
 
         <Border Grid.Column="1" Padding="10" Background="DarkGray">
