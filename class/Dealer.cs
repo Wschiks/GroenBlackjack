@@ -15,7 +15,7 @@ public class Dealer
     public int totaalPunten = 0;
     
     public int stringGetal;
-    //als kaart word toegevoegd aan de list laat hij de kaart zien.
+   
     public void PuntKaarten()
     {
         totaalPunten = 0;

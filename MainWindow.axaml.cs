@@ -15,6 +15,7 @@ namespace avaloniaAppGroen
         private bool Is_Pak_Geschud = false;
 
         Program _program = new Program();
+        Dealer _dealer = new Dealer();
 
         private int _playersCount;
 
@@ -70,7 +71,6 @@ namespace avaloniaAppGroen
         }
         
         //Knoppen kaart geven aan Speler
-        public Boolean player1count, player2count, player3count, player4count = false;
         
         private void GeefKaartPlayer1(object? sender, RoutedEventArgs e)
         {
@@ -141,6 +141,24 @@ namespace avaloniaAppGroen
             if (_players[3].totaalPunten >= 21)
             {
                 ShowPlayer4.IsEnabled = false;
+            }
+            
+
+        }
+        private void GeefKaartDealer(object? sender, RoutedEventArgs e)
+        {
+            _dealer.VoegKaartToe(_pak._schuddenPak[0]);
+            String Kaart = _pak._schuddenPak[0];
+            TextBlock kaartTextBlock = new TextBlock();
+            kaartTextBlock.Text = Kaart;
+            ToonkartenDealer.Children.Add(kaartTextBlock);
+            _pak.PickKaart();
+            Console.WriteLine(string.Join(", ", _dealer.Kaarten));
+            _dealer.PuntKaarten();
+            ShowPuntDealer.Text = $"Totaal punten: {_dealer.totaalPunten}";
+            if (_dealer.totaalPunten >= 17)
+            {
+                ShowDealer.IsEnabled = false;
             }
             
 

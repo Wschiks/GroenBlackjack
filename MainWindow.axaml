@@ -8,9 +8,10 @@
         Title="avaloniaAppGroen">
 
 
-    <Grid Background="{DynamicResource MainBackGround}" ColumnDefinitions="1*, 1*, 1*, 1*">
+    <Grid Background="LightGray" ColumnDefinitions="1*, 1*, 1*, 1*">
 
-        <Border Grid.Column="0" Padding="10" Background="Gainsboro">
+
+        <Border Grid.Column="0" Padding="10" Background="#44673E">
             <StackPanel x:Name="ShowPlayer1">
                 <TextBlock HorizontalAlignment="Center">Emma</TextBlock>
                 <Image Margin="20" Height="100" VerticalAlignment="Top"
@@ -23,7 +24,7 @@
             </StackPanel> 
         </Border>
 
-        <Border Grid.Column="1" Padding="10" Background="DarkGray">
+        <Border Grid.Column="1" Padding="10" Background="#44673E">
             <StackPanel x:Name="ShowPlayer2" IsVisible="False">
                 <TextBlock HorizontalAlignment="Center">Daan</TextBlock>
                 <Image Margin="20" Height="100" VerticalAlignment="Top"
@@ -37,7 +38,7 @@
             </StackPanel>
         </Border>
 
-        <Border Grid.Column="2" Padding="10" Background="Gainsboro">
+        <Border Grid.Column="2" Padding="10" Background="#44673E">
             <StackPanel x:Name="ShowPlayer3" IsVisible="False">
                 <TextBlock HorizontalAlignment="Center">Sophia</TextBlock>
                 <Image Margin="20" Height="100" VerticalAlignment="Top"
@@ -51,7 +52,7 @@
             </StackPanel>
         </Border>
 
-        <Border Grid.Column="3" Padding="10" Background="DarkGray">
+        <Border Grid.Column="3" Padding="10" Background="#44673E">
             <StackPanel x:Name="ShowPlayer4" IsVisible="False">
                 <TextBlock HorizontalAlignment="Center">Peter</TextBlock>
                 <Image Margin="20" Height="100" VerticalAlignment="Top"
@@ -68,8 +69,16 @@
 
         <Border VerticalAlignment="Bottom" Grid.ColumnSpan="4" Height="270" Background="Green">
             <Grid ColumnDefinitions="1*, 1*, 1*, 1*">
+<StackPanel x:Name="ShowDealer">
+    <TextBlock HorizontalAlignment="Center">Dealer</TextBlock>
+    <TextBlock HorizontalAlignment="Center" x:Name="ShowPuntDealer"></TextBlock>
+    <Button Click="GeefKaartDealer" IsEnabled="True" Content="Card" Margin="10,0" VerticalAlignment="Bottom"
+            HorizontalAlignment="Center" />
+    <StackPanel HorizontalAlignment="Center" x:Name="ToonkartenDealer">
 
-
+    </StackPanel>
+    
+</StackPanel>
             </Grid>
 
         </Border>
