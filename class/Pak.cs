@@ -22,7 +22,7 @@ public class Pak
         "ruiten Boer", "ruiten Vrouw", "ruiten Koning", "ruiten As"
     };
 
-    private List<string> _schuddenPak = new List<string>();
+    public List<string> _schuddenPak = new List<string>();
     public void SchudPak()
     {
         _schuddenPak = new List<string>(_pak);

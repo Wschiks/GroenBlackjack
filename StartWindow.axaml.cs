@@ -14,6 +14,7 @@ namespace avaloniaAppGroen
             
             PlayersSlider.PropertyChanged += (s, e) =>
             {
+                
                 if (e.Property.Name == "Value")
                 {
                     PlayersCount = (int)PlayersSlider.Value;

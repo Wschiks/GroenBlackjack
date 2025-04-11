@@ -8,10 +8,8 @@ namespace avaloniaAppGroen
 {
     public partial class MainWindow : Window
     {
-        
         public int PlayersCount { get; set; }
 
-        
 
         Pak _pak = new Pak();
         private bool Is_Pak_Geschud = false;
@@ -20,8 +18,7 @@ namespace avaloniaAppGroen
 
         private int _playersCount;
 
-        
-        
+
         public MainWindow(int playersCount)
         {
             InitializeComponent();
@@ -34,7 +31,6 @@ namespace avaloniaAppGroen
             }
         }
 
-        
 
         private Player[] _players;
 
@@ -47,8 +43,6 @@ namespace avaloniaAppGroen
                 _players[i] = new Player(name: $"Player{i}");
             }
         }
-        
-        
 
 
         //toont de juiste aantal spelers als moet
@@ -56,30 +50,77 @@ namespace avaloniaAppGroen
         {
             if (_playersCount >= 1)
             {
-                Image10.IsVisible = true;
-                Image11.IsVisible = true;
-                
+                ShowPlayer1.IsVisible = true;
             }
 
             if (_playersCount >= 2)
             {
-                Image20.IsVisible = true;
-                Image21.IsVisible = true;
+                ShowPlayer2.IsVisible = true;
             }
 
             if (_playersCount >= 3)
             {
-                Image30.IsVisible = true;
-                Image31.IsVisible = true;
+                ShowPlayer3.IsVisible = true;
             }
 
             if (_playersCount >= 4)
             {
-                Image40.IsVisible = true;
-                Image41.IsVisible = true;
+                ShowPlayer4.IsVisible = true;
             }
         }
+        
+        //Knoppen kaart geven aan Speler
+        public Boolean player1count, player2count, player3count, player4count = false;
+        
+        private void GeefKaartPlayer1(object? sender, RoutedEventArgs e)
+        {
+            _players[0].VoegKaartToe(_pak._schuddenPak[0]);
+            String Kaart = _pak._schuddenPak[0];
+            TextBlock kaartTextBlock = new TextBlock();
+            kaartTextBlock.Text = Kaart;
+            Toonkartenspeler1.Children.Add(kaartTextBlock);
+            _pak.PickKaart();
+            Console.WriteLine(string.Join(", ", _players[0].Kaarten));
+            _players[0].PuntKaarten();
+            if (_players[0].totaalPunten >= 21)
+            {
+                ShowPlayer1.IsEnabled = false;
+            }
+            
 
+        }
+        private void GeefKaartPlayer2(object? sender, RoutedEventArgs e)
+        {
+            _players[1].VoegKaartToe(_pak._schuddenPak[0]);
+            String Kaart = _pak._schuddenPak[0];
+            TextBlock kaartTextBlock = new TextBlock();
+            kaartTextBlock.Text = Kaart;
+            Toonkartenspeler2.Children.Add(kaartTextBlock);
+            _pak.PickKaart();
+            
+        }
+        
+        private void GeefKaartPlayer3(object? sender, RoutedEventArgs e)
+        {
+            _players[2].VoegKaartToe(_pak._schuddenPak[0]);
+            String Kaart = _pak._schuddenPak[0];
+            TextBlock kaartTextBlock = new TextBlock();
+            kaartTextBlock.Text = Kaart;
+            Toonkartenspeler3.Children.Add(kaartTextBlock);
+            _pak.PickKaart();
+            
+        }
+        private void GeefKaartPlayer4(object? sender, RoutedEventArgs e)
+        {
+            _players[3].VoegKaartToe(_pak._schuddenPak[0]);
+            String Kaart = _pak._schuddenPak[0];
+            TextBlock kaartTextBlock = new TextBlock();
+            kaartTextBlock.Text = Kaart;
+            Toonkartenspeler4.Children.Add(kaartTextBlock);
+            _pak.PickKaart();
+            
+        }
+        
 
         // niet geschudden pak printen
         private void Show_Pak(object? sender, RoutedEventArgs e)
