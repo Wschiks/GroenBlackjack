@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices.JavaScript;
 using avaloniaAppGroen;
 
-public class Player
+public class Dealer
 {
-    public string Name { get; set; }
+    
     public List<string> Kaarten { get; private set; } = new List<string>();
 
     public int GetTotaalPunten() 
@@ -39,13 +39,7 @@ public class Player
 
         Console.WriteLine(totaalPunten);
     }
-
     
-
-    public Player(string name)
-    {
-        Name = name;
-    }
 
 
     public void VoegKaartToe(string kaart)

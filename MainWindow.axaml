@@ -15,6 +15,7 @@
                 <TextBlock HorizontalAlignment="Center">Emma</TextBlock>
                 <Image Margin="20" Height="100" VerticalAlignment="Top"
                        Source="avares://avaloniaAppGroen/img/player-icon.png" />
+                <TextBlock HorizontalAlignment="Center" x:Name="ShowPunt1"></TextBlock>
                 <Button Click="GeefKaartPlayer1" IsEnabled="True" Content="Card" Margin="10,0" VerticalAlignment="Bottom"
                         HorizontalAlignment="Center" />
                 <StackPanel HorizontalAlignment="Center" x:Name="Toonkartenspeler1">
@@ -27,6 +28,7 @@
                 <TextBlock HorizontalAlignment="Center">Daan</TextBlock>
                 <Image Margin="20" Height="100" VerticalAlignment="Top"
                        Source="avares://avaloniaAppGroen/img/player-icon.png" />
+                <TextBlock HorizontalAlignment="Center" x:Name="ShowPunt2"></TextBlock>
                 <Button Click="GeefKaartPlayer2" IsEnabled="True" Content="Card" Margin="10,0" VerticalAlignment="Bottom"
                         HorizontalAlignment="Center" />
                 <StackPanel HorizontalAlignment="Center" x:Name="Toonkartenspeler2">
@@ -40,6 +42,7 @@
                 <TextBlock HorizontalAlignment="Center">Sophia</TextBlock>
                 <Image Margin="20" Height="100" VerticalAlignment="Top"
                        Source="avares://avaloniaAppGroen/img/player-icon.png" />
+                <TextBlock HorizontalAlignment="Center" x:Name="ShowPunt3"></TextBlock>
                 <Button Click="GeefKaartPlayer3" IsEnabled="True" Content="Card" Margin="10,0" VerticalAlignment="Bottom"
                         HorizontalAlignment="Center" />
                 <StackPanel HorizontalAlignment="Center" x:Name="Toonkartenspeler3">
@@ -53,6 +56,7 @@
                 <TextBlock HorizontalAlignment="Center">Peter</TextBlock>
                 <Image Margin="20" Height="100" VerticalAlignment="Top"
                        Source="avares://avaloniaAppGroen/img/player-icon.png" />
+                <TextBlock HorizontalAlignment="Center" x:Name="ShowPunt4"></TextBlock>
                 <Button Click="GeefKaartPlayer4" IsEnabled="True" Content="Geef Kaart" Margin="10,0" VerticalAlignment="Bottom"
                         HorizontalAlignment="Center" />
                 <StackPanel HorizontalAlignment="Center" x:Name="Toonkartenspeler4">

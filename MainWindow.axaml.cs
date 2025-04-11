@@ -82,6 +82,7 @@ namespace avaloniaAppGroen
             _pak.PickKaart();
             Console.WriteLine(string.Join(", ", _players[0].Kaarten));
             _players[0].PuntKaarten();
+            ShowPunt1.Text = $"Totaal punten: {_players[0].totaalPunten}";
             if (_players[0].totaalPunten >= 21)
             {
                 ShowPlayer1.IsEnabled = false;
@@ -97,7 +98,15 @@ namespace avaloniaAppGroen
             kaartTextBlock.Text = Kaart;
             Toonkartenspeler2.Children.Add(kaartTextBlock);
             _pak.PickKaart();
+            Console.WriteLine(string.Join(", ", _players[1].Kaarten));
+            _players[1].PuntKaarten();
+            ShowPunt2.Text = $"Totaal punten: {_players[1].totaalPunten}";
+            if (_players[1].totaalPunten >= 21)
+            {
+                ShowPlayer2.IsEnabled = false;
+            }
             
+
         }
         
         private void GeefKaartPlayer3(object? sender, RoutedEventArgs e)
@@ -108,7 +117,15 @@ namespace avaloniaAppGroen
             kaartTextBlock.Text = Kaart;
             Toonkartenspeler3.Children.Add(kaartTextBlock);
             _pak.PickKaart();
+            Console.WriteLine(string.Join(", ", _players[2].Kaarten));
+            _players[2].PuntKaarten();
+            ShowPunt3.Text = $"Totaal punten: {_players[2].totaalPunten}";
+            if (_players[2].totaalPunten >= 21)
+            {
+                ShowPlayer3.IsEnabled = false;
+            }
             
+
         }
         private void GeefKaartPlayer4(object? sender, RoutedEventArgs e)
         {
@@ -118,7 +135,15 @@ namespace avaloniaAppGroen
             kaartTextBlock.Text = Kaart;
             Toonkartenspeler4.Children.Add(kaartTextBlock);
             _pak.PickKaart();
+            Console.WriteLine(string.Join(", ", _players[3].Kaarten));
+            _players[3].PuntKaarten();
+            ShowPunt4.Text = $"Totaal punten: {_players[3].totaalPunten}";
+            if (_players[3].totaalPunten >= 21)
+            {
+                ShowPlayer4.IsEnabled = false;
+            }
             
+
         }
         
 
