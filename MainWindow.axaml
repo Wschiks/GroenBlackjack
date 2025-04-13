@@ -17,11 +17,12 @@
                 <Image Margin="20" Height="100" VerticalAlignment="Top"
                        Source="avares://avaloniaAppGroen/img/player-icon.png" />
                 <TextBlock HorizontalAlignment="Center" x:Name="ShowPunt1"></TextBlock>
-                <Button Click="GeefKaartPlayer1" IsEnabled="True" Content="Card" Margin="10,0" VerticalAlignment="Bottom"
+                <Button Click="GeefKaartPlayer1" IsEnabled="True" Content="Card" Margin="10,0"
+                        VerticalAlignment="Bottom"
                         HorizontalAlignment="Center" />
                 <StackPanel HorizontalAlignment="Center" x:Name="Toonkartenspeler1">
                 </StackPanel>
-            </StackPanel> 
+            </StackPanel>
         </Border>
 
         <Border Grid.Column="1" Padding="10" Background="#44673E">
@@ -30,7 +31,8 @@
                 <Image Margin="20" Height="100" VerticalAlignment="Top"
                        Source="avares://avaloniaAppGroen/img/player-icon.png" />
                 <TextBlock HorizontalAlignment="Center" x:Name="ShowPunt2"></TextBlock>
-                <Button Click="GeefKaartPlayer2" IsEnabled="True" Content="Card" Margin="10,0" VerticalAlignment="Bottom"
+                <Button Click="GeefKaartPlayer2" IsEnabled="True" Content="Card" Margin="10,0"
+                        VerticalAlignment="Bottom"
                         HorizontalAlignment="Center" />
                 <StackPanel HorizontalAlignment="Center" x:Name="Toonkartenspeler2">
 
@@ -44,7 +46,8 @@
                 <Image Margin="20" Height="100" VerticalAlignment="Top"
                        Source="avares://avaloniaAppGroen/img/player-icon.png" />
                 <TextBlock HorizontalAlignment="Center" x:Name="ShowPunt3"></TextBlock>
-                <Button Click="GeefKaartPlayer3" IsEnabled="True" Content="Card" Margin="10,0" VerticalAlignment="Bottom"
+                <Button Click="GeefKaartPlayer3" IsEnabled="True" Content="Card" Margin="10,0"
+                        VerticalAlignment="Bottom"
                         HorizontalAlignment="Center" />
                 <StackPanel HorizontalAlignment="Center" x:Name="Toonkartenspeler3">
 
@@ -58,7 +61,8 @@
                 <Image Margin="20" Height="100" VerticalAlignment="Top"
                        Source="avares://avaloniaAppGroen/img/player-icon.png" />
                 <TextBlock HorizontalAlignment="Center" x:Name="ShowPunt4"></TextBlock>
-                <Button Click="GeefKaartPlayer4" IsEnabled="True" Content="Geef Kaart" Margin="10,0" VerticalAlignment="Bottom"
+                <Button Click="GeefKaartPlayer4" IsEnabled="True" Content="Geef Kaart" Margin="10,0"
+                        VerticalAlignment="Bottom"
                         HorizontalAlignment="Center" />
                 <StackPanel HorizontalAlignment="Center" x:Name="Toonkartenspeler4">
 
@@ -69,16 +73,17 @@
 
         <Border VerticalAlignment="Bottom" Grid.ColumnSpan="4" Height="270" Background="Green">
             <Grid ColumnDefinitions="1*, 1*, 1*, 1*">
-<StackPanel x:Name="ShowDealer">
-    <TextBlock HorizontalAlignment="Center">Dealer</TextBlock>
-    <TextBlock HorizontalAlignment="Center" x:Name="ShowPuntDealer"></TextBlock>
-    <Button Click="GeefKaartDealer" IsEnabled="True" Content="Card" Margin="10,0" VerticalAlignment="Bottom"
-            HorizontalAlignment="Center" />
-    <StackPanel HorizontalAlignment="Center" x:Name="ToonkartenDealer">
+                <StackPanel x:Name="ShowDealer">
+                    <TextBlock HorizontalAlignment="Center">Dealer</TextBlock>
+                    <TextBlock HorizontalAlignment="Center" x:Name="ShowPuntDealer"></TextBlock>
+                    <Button Click="GeefKaartDealer" IsEnabled="True" Content="Card" Margin="10,0"
+                            VerticalAlignment="Bottom"
+                            HorizontalAlignment="Center" />
+                    <StackPanel HorizontalAlignment="Center" x:Name="ToonkartenDealer">
 
-    </StackPanel>
-    
-</StackPanel>
+                    </StackPanel>
+
+                </StackPanel>
             </Grid>
 
         </Border>
@@ -95,15 +100,16 @@
                     <!-- <Button Click="Button_OnClick" Content="Card" Margin="10,0" /> -->
                     <!-- <Button Click="Button_OnClick" Content="Card" Margin="10,0" /> -->
                     <!-- <Button Click="Button_OnClick" Content="Card" Margin="10,0" /> -->
-
                 </StackPanel>
                 <Border Grid.Column="3" HorizontalAlignment="Stretch" Height="60" Background="Orange">
                     <Button Click="PickKaart" Content="Card" Margin="10,0" />
+                    
                 </Border>
+              
 
             </Grid>
 
-
+    
         </Border>
 
     </Grid>

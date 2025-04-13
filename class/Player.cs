@@ -24,9 +24,23 @@ public class Player
         {
             string waarde = Kaarten[i].Split(' ')[1];
 
+
+            
+             
             if (!int.TryParse(waarde, out stringGetal))
             {
-                stringGetal = 10;
+                if (waarde == "ruiten As" || waarde == "klaveren As" || waarde == "harten As" || waarde == "schoppen As")
+                {
+                    if (totaalPunten + 10 >= 11)
+                    {
+                        stringGetal = 1;
+                    }
+                }
+                else
+                {
+                    stringGetal = 10; 
+                }
+                
             }
 
             totaalPunten += stringGetal;
@@ -40,6 +54,8 @@ public class Player
         Console.WriteLine(totaalPunten);
     }
 
+    
+    
     
 
     public Player(string name)

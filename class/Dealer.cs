@@ -6,6 +6,7 @@ using avaloniaAppGroen;
 public class Dealer
 {
     
+ 
     public List<string> Kaarten { get; private set; } = new List<string>();
 
     public int GetTotaalPunten() 
